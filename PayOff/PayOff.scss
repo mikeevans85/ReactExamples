@@ -1,0 +1,131 @@
+.pay-off {
+    font-family: Helvetica;
+    flex: 3;
+    .extra-text {
+        font-family: Helvetica;
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+    }
+    .payment {
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        background-color: #4eCCA3;
+        padding: 5px 15px;
+        width: 30%;
+    }
+    .paymentChart {
+        background: #fff;
+        padding: 15px;
+        width: 70%;
+    }
+    .paymentSlider {
+        flex: 2;
+    }
+    .drag-text {
+        font-size: 1.2rem;
+        color: #393e46;
+        & span {
+            color: #4eCCA3;
+            font-weight: 400;
+        }
+    }
+    .line-graph {
+        align-items: flex-end;
+    }
+    .remain-graph {
+        font-family: Helvetica;
+        font-size: 12px;
+        color: #4c4d4f;
+        text-align: center;
+        padding-right: 15px;
+    }
+    .improved {
+        font-family: Helvetica;
+        font-size: 13.5px;
+        color: #4eCCA3;
+        .dot {
+            width: 10px;
+            height: 10px;
+            background-color: #4eCCA3;
+            padding: 10px;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+    }
+    .current-text {
+        font-family: Helvetica;
+        font-size: 13.5px;
+        color: #4c4d4f;
+        .dot {
+            width: 10px;
+            height: 10px;
+            background-color: #4c4d4f;
+            padding: 10px;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+    }
+    .age {
+        font-family: Helvetica;
+        font-size: 12px;
+        color: #4c4d4f;
+        text-align: center;
+    }
+}
+
+.payoffTile {
+    background: #4eCCA3;
+}
+
+@media screen and (max-width: 767px) {
+    .payoff-container {
+        display: block;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+
+        .drag-text-mobile {
+            display: block;
+            margin: 20px 0;
+        }
+
+        .payment {
+            flex-direction: row;
+
+            .drag-text {
+                display: none;
+            }
+
+            .paymentSlider {
+                display: none;
+            }
+            .paymentSliderMobile {
+                display: block;
+                margin: 0 0 10px 20px;
+            }
+        }
+
+        .paymentChart {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .paymentSlider {
+        display: block;
+    }
+    .paymentSliderMobile {
+        display: none;
+    }
+
+    .drag-text-mobile {
+        display: none;
+    }
+
+    .drag-text {
+        display: block;
+    }
+}

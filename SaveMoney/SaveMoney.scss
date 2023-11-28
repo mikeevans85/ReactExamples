@@ -1,0 +1,40 @@
+.tile {
+    background: #ffffff;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-family: Helvetica;
+    font-size: 1.6rem;
+    color: #393e46;
+}
+
+.bt {
+    border-radius: 5px;
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    padding: 16px;
+    border: none;
+    outline: none;
+    height: fit-content;
+    &.bt-primary {
+        background: #8a1022;
+        color: #ffffff;
+    }
+}
+
+.save-money-component {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .save-money {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .save-money-component {
+        width: 50% !important;
+    }
+}

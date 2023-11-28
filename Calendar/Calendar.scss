@@ -1,0 +1,81 @@
+.border-bc8 {
+    border-bottom: 1px solid #c9cac8;
+}
+.table {
+    // font-family: Helvetica;
+    font-size: 1.4rem;
+    color: #393e46;
+    &.table-head {
+        font-weight: bold;
+    }
+}
+
+.DayPicker {
+    width: 100%;
+    font-size: 12px;
+    // font-family: Helvetica;
+    color: #2e2e2e;
+    .DayPicker-Weekday {
+        // font-family: Helvetica;
+        font-size: 12px;
+        color: #2e2e2e;
+        text-align: center;
+    }
+    .DayPicker-Month {
+        width: 80%;
+        .DayPicker-Caption {
+            // font-family: Helvetica;
+            font-size: 18px;
+            color: #4eCCA3;
+            font-weight: bold;
+            text-align: center;
+            margin-right: 5px;
+            margin-bottom: 15px;
+            div {
+                font-weight: 700;
+            }
+        }  
+    } 
+    .DayPicker-Day {
+        padding: .5em 1.25em;
+    }
+    .DayPicker-Day--today {
+        color: #4eCCA3;
+    }
+}
+
+.alumsum-calender {
+    .dot {
+        width: 10px;
+        height: 10px;
+        background-color: #4c4d4f;
+        padding: 9px;
+        border-radius: 50%;
+    }
+}
+
+.react-calendar {
+    margin: auto;
+    border: none;
+    font-family: Helvetica;
+    .react-calendar__navigation {
+        height: 30px;
+        margin-bottom: 0px;
+    }
+    .react-calendar__month-view__weekdays__weekday {
+        font-weight: 100;
+        abbr {
+            display: block;
+            visibility: hidden;
+            text-decoration: none;
+        }
+        abbr:first-letter {
+            visibility: visible;
+            text-decoration: none;
+        }
+    }
+}
+
+.btn-dashboard {
+    line-height: 3px !important;
+}

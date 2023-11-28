@@ -1,0 +1,22 @@
+.header {
+    img {
+        max-width: 25%;
+    }
+    .welcome-text {
+        font-family: Helvetica;
+        font-size: 2.4rem;
+        color: #393e46;
+    }
+
+    .country-name {
+        color: #4eCCa3;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header {
+        img {
+            max-width: 50%;
+        }
+    }
+}

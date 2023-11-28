@@ -1,0 +1,89 @@
+.menu {
+    background-color: #232931;
+    font-family: Helvetica;
+    font-size: 1.4rem;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    color: #8c95a3;
+    text-align: center;
+    .menu-item {
+        .menu-img-hover {
+            display: none;
+        }
+        .mr-t5 {
+            color: #8c95a3;
+        }
+        &:hover {
+            background: #393E46 !important;
+            .mr-t5 {
+                color: #4eCCA3;
+            }
+        }
+        &:hover .menu-img-hover {
+            display: inline;
+        }
+        &:hover .menu-img {
+            display: none;
+        }
+        .refinanceNow {
+            position: absolute;
+            transform: translate(130px, -3px);
+            left: -70px;
+        }
+    }
+
+    .refinance-menu-item {
+        display: flex;
+    }
+}
+
+.menu-mobile {
+    background-color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.menu-mobile-main {
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: #232931;
+    font-family: Helvetica;
+    font-size: 1.4rem;
+    color: #8c95a3;
+    .menu-item {
+        display: flex;
+        align-items: center;
+        .menu-img-hover {
+            display: none;
+        }
+        &:hover {
+            background: #8c95a3;
+            color: #ffffff;
+        }
+        &:hover .menu-img-hover {
+            display: inline;
+        }
+        &:hover .menu-img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu {
+        display: none;
+    }
+    .app-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .menu-mobile {
+        display: none;
+    }
+    .app-content {
+        flex-direction: row;
+    }
+}

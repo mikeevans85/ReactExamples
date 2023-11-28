@@ -1,0 +1,18 @@
+.footer {
+    margin-top: 100px;
+    font-size: 1.2rem;
+    .footer-head {
+        text-align: center;
+        font-family: Helvetica;
+        color: #393e46;
+    }
+    .footer-menu {
+        & > div {
+            padding-right: 10px;
+        }
+        & > div:not(:last-child)::after {
+            padding-left: 10px;
+            content: "|";
+        }
+    }
+}
